@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paryatana - Login</title>
+    <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+   
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet">
+    <link href="css/templatemo-style.css" rel="stylesheet">
+    <link href="css/scrollToTop.css" rel="stylesheet">
+
+     <!--Link to footer.css-->
+	<link href="css/footer.css" rel="stylesheet">
+
+	<link href = "css/logo.css" rel="stylesheet"> 
+
+    <link href="css/parallax-only.css" rel="stylesheet">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+
+
+    <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="./favicon/favicon-16x16.png"
+  />
+  <link rel="manifest" href="./favicon/site.webmanifest" />
+  <!-- <link href="css/Homenavbar.css" rel="stylesheet"> -->
+
+  <!--  Fontawesome icons -->
+  <script src="https://kit.fontawesome.com/e9cf5a296c.js" crossorigin="anonymous"></script>
+
+  <link href="css/logo.css" rel="stylesheet">
+  
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('img/login.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #400361;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px 5%; /* Adjust padding to fit screen */
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 14px; /* Smaller font size */
+        }
+
+        .navbar .logo {
+            margin-right: 500px; /* Adjust spacing */
+            margin-left: 120px;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 10px 12px; /* Adjust padding */
+            text-decoration: none;
+            text-align: center;
+            margin-right: 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar a:last-child {
+            margin-right: 200px; /* Cách lề phải một khoảng */
+        }
+
+
+        .navbar .logo img {
+            height: 50px; /* Smaller logo */
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+            margin-top: 100px; /* Adjust this margin to position the login container correctly */
+        }
+
+        .login-container h2 {
+            margin-bottom: 50px;
+        }
+
+        .login-container input[type="text"], .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            background-color: #ff7f7f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .login-container button:hover {
+            background-color: #ff4f4f;
+        }
+
+        .login-container .checkbox-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .login-container .social-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .login-container .social-buttons button {
+            width: 48%;
+            background-color: #3b5998;
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-container .social-buttons button.twitter {
+            background-color: #1da1f2;
+        }
+
+        .login-container .social-buttons button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/PARYATANA-new.png" width="200" height="auto" id="logo">
+
+        </div>
+        <div>
+            
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="tours.html">OUR TOURS</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="login.html">LOGIN</a>
+        </div>
+    </div>
+    <div class="login-container">
+        <h2>Have an account?</h2>
+        <form action="/login" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="remember"> Remember Me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <p>or</p>
+            <div class="social-buttons">
+                <button class="facebook"><a href="https://www.facebook.com/groups/239636035899353" target="_blank">Facebook</a></button>
+                <button class="twitter"><a href="https://www.facebook.com/groups/239636035899353" target="_blank" >Twitter</a></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
